@@ -1,0 +1,76 @@
+absolute url	=>d:/Kedar/imgs/img.jpg
+relative url	=>img.jpg
+
+hyperlinks
+a=>anchor
+<a href="">Click Here</a>
+
+measurement tags
+progress 
+meter
+
+<audio src="audio_path" controls autoplay loop/>	
+supported types=>mp3,ogg,wav
+
+
+<audio controls autoplay loop>
+	<source src="audio_path1"/>
+	<source src="audio_path2"/>
+	<source src="audio_path3"/>
+</audio>
+
+<video controls autoplay loop height="" width="" poster="url_to_Thumbnail">
+</video>
+supported types=>mp4,webm
+
+
+semantic Tags=>grouping up the similar tags
+semantic tags do not appear on the page 
+but do affect the appearance of page
+ 
+<p></p>
+<div></div>
+<b></b>
+<header>
+<h1>
+<h2>
+<h1>
+<h3>
+<h5>
+<h4>
+<h6>
+</header>
+footer
+article
+aside	=>helps you to group up the content that appear on either side
+nav	=>group up hyperlinks
+figure	=>images,codes
+
+Monday-Wednesday-Friday 7.30-9 HTML5
+Tues-Thu-Sat 7.30-9	SQL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
