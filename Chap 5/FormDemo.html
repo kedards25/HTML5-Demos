@@ -1,7 +1,21 @@
 <html>
+	<head>
+		<title>
+			Form Demo
+		</title>
+		<script type="text/javascript">
+			function greet(form)
+			{
+				var user=orderForm.userNm.value;
+				alert("Welcome "+user);
+			}
+		</script>
+	</head>
 	<body>
 		<div style="background:#e3e3e3;font-family:sans-serif;width:30%">
-		<form action="order.html" method="get">	
+		<!-- default method is GET-->
+		<!--<form action="order.html" method="get" autocomplete="off" novalidate>-->
+		<form action="order.html" method="post" name="orderForm">
 			<table>
 				<caption><b>Form Demo</b></caption>
 				<tr>
@@ -19,7 +33,7 @@
 					</td>
 					<td>
 						<input type="password" id="userPwd" name="pass" required placeholder="Enter your password"
-						autofocus pattern="[a-zA-Z]{6,10}"/>
+						autofocus pattern="[a-zA-Z]{6,10}" title="only alphabets min 6,max 10"/>
 					</td>
 				</tr>
 				<tr>
@@ -35,7 +49,7 @@
 						<label for="contact">Contact No:</label>
 					</td>
 					<td>
-						<input type="tel" size="20" placeholder="Enter your contact no." id="contact" name="phn"/>
+						<input type="tel" size="20" pattern=[0-9]{8,10} placeholder="Enter your contact no." id="contact" name="phn"/>
 					</td>
 				</tr>
 				<tr>
@@ -74,7 +88,7 @@
 						<label for="coldDrinks">Cold Drinks</label>
 						<input type="checkbox" name="addOn2" id="salad"/>
 						<label for="salad">Salad</label>
-						<input type="checkbox" name="addOn2" id="dessert"/>
+						<input type="checkbox" name="addOn3" id="dessert"/>
 						<label for="dessert">Dessert</label>
 					</td>
 				</tr>	
@@ -154,7 +168,9 @@
 				</tr>
 				<tr>
 					<td>
-						<input type="submit" value="Place Order"/>
+						<!--<input type="submit" value="Place Order" formmethod="post" formaction="order.html" formautocomplete="off"
+						formnovalidate/>-->
+						<button onclick="greet(this.form)">Place Order</button>
 					</td>
 					<td>
 						<input type="reset" value="cancel"/>
