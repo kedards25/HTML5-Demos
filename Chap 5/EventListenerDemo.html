@@ -1,0 +1,32 @@
+<html>
+	<body>
+		<button id="btn">Click Here</button><br/><br/>
+		<button id="addBtn">Add Listener</button>
+		<button id="rmBtn">Remove Listener</button>
+		<script>
+			var btnClick=document.getElementById("btn");
+			var addBtnClick=document.getElementById("addBtn");
+			var rmBtnClick=document.getElementById("rmBtn");
+
+			addBtnClick.addEventListener("click",add,true);
+			function add()
+			{
+				if(btnClick.addEventListener)
+				{	
+					btnClick.addEventListener("click",greet,true);
+				}
+			}
+
+			rmBtnClick.addEventListener("click",add,true);
+			function add()
+			{
+				btnClick.removeEventListener("click",greet,false);
+			}
+
+			function greet()
+			{
+				alert("Event listener associated");
+			}
+		</script>
+	</body>
+</html>
