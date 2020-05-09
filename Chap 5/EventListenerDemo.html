@@ -8,17 +8,24 @@
 			var addBtnClick=document.getElementById("addBtn");
 			var rmBtnClick=document.getElementById("rmBtn");
 
+			//Whenever click event occurs on 'Add Listener'
+			//a handler function 'add' is associated with button
 			addBtnClick.addEventListener("click",add,true);
+
 			function add()
 			{
 				if(btnClick.addEventListener)
 				{	
-					btnClick.addEventListener("click",greet,true);
+					//false->handler can be removed from event
+					//true->handler can not be removed from event once assigned
+					btnClick.addEventListener("click",greet,false);
 				}
 			}
 
-			rmBtnClick.addEventListener("click",add,true);
-			function add()
+			//Whenever click event occurs on 'Remove Listener'
+			//a handler function 'remove' is associated with button
+			rmBtnClick.addEventListener("click",remove,true);
+			function remove()
 			{
 				btnClick.removeEventListener("click",greet,false);
 			}
@@ -27,6 +34,7 @@
 			{
 				alert("Event listener associated");
 			}
+			
 		</script>
 	</body>
 </html>

@@ -1,0 +1,32 @@
+<html>
+	<body>
+
+		<p>Sample Text goes here</p>
+		<p>Additional Sample Text goes here</p>
+		<h3></h3>
+		<!--<button id="btn">
+			Click Here
+		</button>-->
+		<input type="submit" value="click here" id="btn"/>
+		<!-- we are referring to the actual location of the jquery file on the web-->
+		<!-- it is called as CDN-->
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+		<script>
+
+			$(document).ready(function(){
+				$("#btn").click(function(){
+					//var info=$("p").html();
+					//$("h3").html(info);
+
+					//var info=$("p").text();
+					//$("h3").text(info);
+
+					//$(this).val("clicked");
+
+					$(this).attr("value","Clicked");
+				});
+			});
+		</script>
+	</body>
+</html>

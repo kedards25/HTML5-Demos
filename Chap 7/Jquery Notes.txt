@@ -1,0 +1,84 @@
+Jquery
+
+<p id="p1">Sample</p>
+<button onclick="showHide()">click</p>
+<script>
+	function showHide()
+	{
+		var para=document.getElementById("p1");
+		para.css("display","none");
+	}
+</script>
+jquery.com->download->latest jquery
+jquery.min.js
+jquery.js
+
+jquery Library(min.js)
+html
+your own script function to make html and library communicate
+
+to make jquery.min file available on any browser, we should use CDN
+
+(jquery)Content Delivery(over) Network
+
+
+element with self closing tag=>val(),attr()
+
+element with opening and closing tag=>html(),text()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+<html>
+	<body>
+
+		<div id="p1" style="height:200px;width:200px;background:purple;display:none">Sample</div>
+		<button>Click Here</button>
+
+		<script src="jquery-3.5.1.min.js"></script>
+
+		<script>
+
+			$(document).ready(function(){
+				$("button").click(function(){
+					//$("#p1").hide(2000);
+					//$("#p1").show(2000);
+					//$("#p1").toggle(2000);
+					//$("#p1").fadeOut(2000);
+					//$("#p1").fadeIn(2000);
+					//$("#p1").fadeToggle(2000);
+					//$("#p1").fadeTo(2000,0.2);
+					//$("#p1").slideUp(2000);
+					//$("#p1").slideDown(2000);
+					$("#p1").slideToggle("fast");
+				});
+			});
+		</script>
+	</body>
+</html>

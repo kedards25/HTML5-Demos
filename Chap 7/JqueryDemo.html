@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<!-- Jquery Library-->
+		<script src="jquery-3.5.1.min.js"></script>
+	</head>
+	<body>
+		<!--html code-->
+		<p id="p1">Sample</p>
+		<button>Click</button>
+
+		<!--your own script-->
+		<script>
+			//let my document get loaded fully on the browser
+			//otherwise html elements won't be found
+			$(document).ready(function(){
+				//accessing element and its event
+				$("#p1").click(function(){
+					//actual execution after the event occured
+					//this refers to current element
+					$(this).hide(2000);//time is given in mili seconds
+					//$("#p1").show(2000);
+					//$("#p1").toggle(2000);
+				})
+			});
+		</script>
+	</body>
+</html>

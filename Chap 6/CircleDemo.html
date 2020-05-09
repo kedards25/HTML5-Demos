@@ -1,0 +1,15 @@
+<html>
+	<body>
+		<canvas id="cnvs" style="border:1px solid blue" height="200px" width="300px">
+			Canvas not supported
+		</canvas>
+		<script>
+			var c=document.getElementById("cnvs");
+			var ctx=c.getContext("2d");
+			//ctx.arc(x1,y1(co-ordinates of center),radius,starting angle(in radians),ending angle,direction)
+			ctx.arc(150,100,50,0,2*Math.PI,false);
+			//ctx.stroke();
+			ctx.fill();
+		</script>
+	</body>
+</html>

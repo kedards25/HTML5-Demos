@@ -1,0 +1,18 @@
+<html>
+	<body>
+		<canvas id="cnvs" style="border:1px solid blue" height="200px" width="300px">
+			Canvas not supported
+		</canvas>
+		<script>
+			var c=document.getElementById("cnvs");
+			var ctx=c.getContext("2d");
+			ctx.font="18px calibri";
+			var grad=ctx.createLinearGradient(10,10,250,200);
+			grad.addColorStop(0,"red");
+			grad.addColorStop(0.5,"purple");
+			grad.addColorStop(1,"blue");
+			ctx.fillStyle=grad;
+			ctx.fillText("Sankalp is star",10,50,120);  	
+		</script>
+	</body>
+</html>

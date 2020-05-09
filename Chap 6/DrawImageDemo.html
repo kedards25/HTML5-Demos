@@ -1,0 +1,16 @@
+<html>
+	<body>
+		<canvas id="cnvs" style="border:1px solid blue" height="200px" width="300px">
+			Canvas not supported
+		</canvas>
+		<script>
+			var c=document.getElementById("cnvs");
+			var ctx=c.getContext("2d");
+			var img=new Image();
+			img.src="images.jpg"
+			img.onload=function(){
+			ctx.drawImage(img,20,20,100,100);
+			}
+		</script>
+	</body>
+</html>
